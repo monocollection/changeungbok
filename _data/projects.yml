@@ -1,0 +1,16 @@
+---
+
+- slug: solo-exhibition
+  name: 개인전
+
+- slug: group-exhibition
+  name: 그룹전
+
+- slug: collaboration
+  name: 협업
+
+- slug: workshop
+  name: 워크숍
+
+- slug: book
+  name: 책

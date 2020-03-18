@@ -1,0 +1,43 @@
+title: Chang Eungbok
+email: ""
+description: Chang Eungbok
+
+repository: "air18/upgraded-octo-spork2"
+ga_property: ""
+
+# Build settings
+plugins: ["jekyll-feed", "jekyll-sitemap", "jekyll-redirect-from"]
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "update_bootstrap.sh", "package-lock.json", "LICENSE.md", "README.md"]
+
+kramdown:
+  input: GFM
+  auto_ids: true
+
+collections:
+  project:
+    output: true
+    permalink: /project/:categories/:slug
+  project_en:
+    output: true
+    permalink: /en/project/:categories/:slug
+
+defaults:
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+  - scope:
+      path: "_project"
+      type: project
+    values:
+      layout: item
+      class: detail
+  - scope:
+      path: "_project_en"
+      type: project_en
+    values:
+      layout: item
+      lang: "en"
+      class: detail
+
+item_img_url: "/img"
