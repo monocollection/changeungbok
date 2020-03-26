@@ -225,6 +225,11 @@ body {
   .container-fluid .row {
     padding-top: 10px;
   }
+  .navbar.navbar-light .navbar-collapse {
+    @include media-breakpoint-up(lg) {
+      top: 0px;
+    }
+  }
   #copyright, .monocollection-com {
     font-size: 0.875rem;
     @media (max-width: 1440px) {
@@ -277,6 +282,7 @@ body {
   }
   .monocollection-com {
     text-transform: lowercase !important;
+    margin-top: 12px !important;
   }
 }
 
