@@ -43,7 +43,7 @@ layout: default
     </div>
     <div class="col-md-12 item--content--text row">
       <div class="col">
-        <h2>{{ page.title }}</h2>
+        <h2 style="line-height: 1.5 !important;">{{ page.title | replace: '_', "_<br>" }}</h2>
         {{ content }}
       </div>
       <div class="col d-none d-lg-block">
