@@ -38,7 +38,7 @@ layout: default
         {% include carousel.html covers=covers id=page.slug %}
       {% else %}
       {% assign cover = page.images | first %}
-      <img src="{{ site.item_img_url }}/{% if page.type contains 'press' %}press{% else %}{{ page.category }}{% endif %}/{{ cover }}" alt="{{ page.title }}">
+      <img src="{{ site.item_img_url }}/{{ page.category }}/{{page.slug}}/{{ cover }}" alt="{{ page.title }}">
       {% endif %}
     </div>
     <div class="col-md-12 item--content--text row">
